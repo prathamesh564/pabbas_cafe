@@ -1,0 +1,115 @@
+<html>
+<head>
+     <meta charset="UTF-8">
+    <title>Ice Cream Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            border: 2px solid #000;
+            padding: 20px;
+            background-color: white;
+            gap: 30px;
+        }
+
+        .image-box, .form-box {
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        .image-box img {
+            width: 250px;
+            height: auto;
+        }
+
+        .form-box {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 300px;
+        }
+
+        .form-box .img-placeholder {
+            border: 1px solid #000;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+        }
+
+        input[type="text"], input[type="number"], input[type="tel"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(241, 224, 255);">
+
+<div class="container">
+    <!-- Left Side Image -->
+    <div class="image-box">
+        <img src="https://aroundmangalore.com/wp-content/uploads/2014/02/Tiramisu-Ice-Cream-Pabbas-Ideals-Mangalore.jpg" alt="Ice Cream">
+    </div>
+
+    <!-- Right Side Form -->
+    <div class="form-box">
+        <center>
+        <img src="data:image/webp;base64,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" alt="Login image" width="100" height="100"/>
+        </center>
+   <form id="orderForm"><center>
+    <h5> Place Your Order </h5>
+     <h3> Pabbas iceCream BILL</h3>
+        <input type="text" id="name" placeholder="Name" required>
+        <p> </p>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        <p> </p>
+        <input type="text" id="iceCream" placeholder="Ice Cream Name" required>
+        <p> </p>
+        <input type="number" id="quantity" placeholder="Quantity" min="1" required>
+        <p> </p>
+        <button type="submit">ORDER</button>
+      </form>
+    </div>
+  </div>  </body></center>
+  <script>
+    document.getElementById("orderForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById("name").value;
+      const phone = document.getElementById("phone").value;
+      const iceCream = document.getElementById("iceCream").value;
+      const quantity = document.getElementById("quantity").value;
+      if(name || phone || iceCream || quantity!=="0") {
+         alert("Thank you, " + name + "! Your order of " + quantity + " " + iceCream + "(s) has been placed.\nWe will contact you at " + phone + ".");
+        return;
+      }
+
+      alert("Thank you, " + name + "! Your order of " + quantity + " " + iceCream + "(s) has been placed.\nWe will contact you at " + phone + ".");
+    });
+</script>
+
+    </body>
+</html>
