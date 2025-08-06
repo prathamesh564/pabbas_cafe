@@ -2,14 +2,45 @@
 <head>
      <meta charset="UTF-8">
     <title>Ice Cream Order</title>
+    <header>
+         <nav style ="background-color: rgb(18, 4, 34)">
+                <ul>
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.VriRnJpx4hHJIZzKi-JcmgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" width="100" height="100">
+                    <a href="" style="
+                    margin: 20px;
+                    font-size: 20px;
+                    color:rgb(255, 255, 255);
+                    font-family: 'Segue UI',Tahoma, Geneva, Verdana, sans-serif;">Menu</a>
+                     <a href="" style="
+                    margin: 20px;
+                    font-size: 20px;
+                    color:rgb(255, 255, 255);
+                    font-family: 'Segue UI',Tahoma, Geneva, Verdana, sans-serif;">About Us</a>
+                    <a href="" style="
+                    margin: 20px;
+                    font-size: 20px;
+                    color:rgb(255, 255, 255);
+                    font-family: 'Segue UI',Tahoma, Geneva, Verdana, sans-serif;">Reviews</a>    
+                     <a href="" style="
+                    margin: 20px;
+                    font-size: 20px;
+                    color:rgb(255, 255, 255);
+                    font-family: 'Segue UI',Tahoma, Geneva, Verdana, sans-serif;">Contacts</a>
+                </ul>
+        
+        </nav>
+    </header>
     <style>
+        
         body {
             font-family: Arial, sans-serif;
             background-color: #f8f8f8;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            min-height: 80vh;
+            flex-direction: column;
+
         }
 
         .container {
@@ -24,6 +55,7 @@
             border: 2px solid black;
             padding: 20px;
         }
+
 
         .image-box img {
             width: 250px;
@@ -64,6 +96,12 @@
         button:hover {
             background-color: darkorange;
         }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
     </style>
 </head>
 <body style="background-color: rgb(241, 224, 255);">
@@ -71,7 +109,13 @@
 <div class="container">
     <!-- Left Side Image -->
     <div class="image-box">
-        <img src="https://aroundmangalore.com/wp-content/uploads/2014/02/Tiramisu-Ice-Cream-Pabbas-Ideals-Mangalore.jpg" alt="Ice Cream">
+        <img src="https://aroundmangalore.com/wp-content/uploads/2014/02/Tiramisu-Ice-Cream-Pabbas-Ideals-Mangalore.jpg" alt="Ice Cream" >
+     
+     <center>   <h3>Thiramisu 50% off </h3>
+        <p> End your day with a Delicious icecream </p>
+        <p> Order Now and get 50% off on your first order </p>
+        <p> Hurry up! Limited time offer </p>
+    </center>
     </div>
 
     <!-- Right Side Form -->
@@ -89,11 +133,15 @@
         <input type="text" id="iceCream" placeholder="Ice Cream Name" required>
         <p> </p>
         <input type="number" id="quantity" placeholder="Quantity" min="1" required>
-        <p> </p>
+        <p>* inclusive all taxes and GST.</p>
+        <p>* Have a Delicious Bite *</p>
         <button type="submit">ORDER</button>
       </form>
     </div>
-  </div>  </body></center>
+    </div>
+</footer>
+
+    </center>
   <script>
     document.getElementById("orderForm").addEventListener("submit", function(e) {
       e.preventDefault();
@@ -109,7 +157,21 @@
 
       alert("Thank you, " + name + "! Your order of " + quantity + " " + iceCream + "(s) has been placed.\nWe will contact you at " + phone + ".");
     });
-</script>
+</script></body>
+<body>
+<br>
+<h1> </h1>
+ <footer style="background-color: rgb(33, 31, 36); color: white; text-align: center; padding: 10px; font-size: 14px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <div style="margin-bottom: 10px;">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.VriRnJpx4hHJIZzKi-JcmgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" width="80" height="80" alt="Ideal Logo">
+  </div>
+  <div style="margin-bottom: 10px;">
+    <a href="#" style="margin: 10px; color: white; text-decoration: none;">Contact:0824-372682</a>
+    <a href="#" style="margin: 10px; color: white; text-decoration: none;">Open Mon-Sun 7:00AM-10:00PM</a>
+    <a href="#" style="margin: 10px; color: white; text-decoration: none;">Follow us on Instagram | WhatsApp | Facebook</a>
+  </div>
+  <p style="margin-top: 10px;">© 2025, Bootcamp Batch</p>
+</footer>
 
     </body>
 </html>
